@@ -1,0 +1,136 @@
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts'; 
+
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+
+@tailwind preflight;
+
+@tailwind components;
+
+.heading-1 {
+  @apply .text-4xl .font-sans;
+}
+.heading-2 {
+  @apply .text-3xl .font-sans;
+}
+.heading-3 {
+  @apply .text-2xl .font-sans;
+}
+.callout-text {
+  @apply .text-2xl .font-sans .font-light;
+}
+.heading-4 {
+  @apply .text-xl .font-sans .font-bold;
+}
+.heading-5 {
+  @apply .text-xl .font-sans;
+}
+.headling-6 {
+  @apply .font-sans .font-bold;
+}
+.button-text-on-dark {
+  @apply .font-sans .text-gray-1;
+}
+.body-text {
+  @apply .font-sans .text-black;
+}
+.button-text-on-light {
+  @apply .font-sans .text-black;
+}
+.button-text-disabled {
+  @apply .font-sans .text-gray-8;
+}
+
+.form-header {
+  @apply .text-2xl .font-sans .text-black;
+}
+.form-error-message {
+  @apply .font-sans .text-primary-dark;
+}
+
+.form-label {
+  @apply .font-sans .font-semibold .text-black;
+}
+
+.form-note {
+  @apply .font-sans .text-black;
+}
+
+.mh-btn {
+  @apply .cursor-pointer .rounded .px-4 .py-4;
+}
+
+.mh-btn--primary {
+  @apply .bg-primary .text-white;
+  &:hover {
+    @apply .bg-primary-dark;
+  }
+  &:active {
+    @apply .bg-primary-darker;
+  }
+}
+
+.mh-btn--outline {
+  @apply .bg-white .text-primary .border .border-primary;
+  &:hover {
+    @apply .bg-primary-lighter;
+  }
+  &:active {
+    @apply .bg-primary-light;
+  }
+}
+
+.mh-btn[disabled] {
+  @apply .bg-gray-4 .text-gray-6;
+}
+
+.mh-input-wrapper {
+  position: relative;
+  width: 100%;
+
+}
+
+.mh-error-icon {
+  height: 1rem;
+  width: 1rem;
+}
+
+.mh-error-icon--inline{
+  position: absolute;
+  top: 12px;
+  right: -8px;
+}
+
+.icon-stack-wrapper {
+  position: relative;
+  i {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.mh-form-field__label {
+  @apply .block .form-label .mb-1;
+}
+
+.mh-form-field__input {
+  @apply .border .border-gray-6 .h-10 .w-full .mb-1;
+
+  &.mh-error {
+    @apply .border-error;
+  }
+}
+
+.mh-form-field__error-message {
+  @apply .bg-error-background .text-error .flex .items-center .h-10 .px-4;
+}
+
+.mh-select-container {
+  .mh-select__control--is-focused {
+    .mh-select__dropdown-indicator {
+      @apply .text-primary;
+    }
+  }
+}
+
+@tailwind utilities;

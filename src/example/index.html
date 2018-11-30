@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Mh Platform UI Sample</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+  <header class="h-24">
+    <span class="mt-4 mr-4 float-right">
+      <a href="/users/sign_in">Sign in</a>
+    </span>
+  </header>
+
+  <div class="bg-primary h-16 flex mb-4">
+    <div class="bg-primary-dark ml-12 flex items-center flex-initial text-white text-lg">
+      <span class="mx-3">TBD</span>
+    </div>
+  </div>
+  <div class="min-w-xl max-w-4xl mx-12">
+    <h1>Page Layout</h1>
+
+    <p class="heading-1">Grids</p>
+    <div class="flex -mx-2 mb-12">
+      <div class="w-1/12 px-2">
+        <div class="bg-gray-2 h-32"></div>
+      </div>
+      <div class="w-1/12 px-2">
+        <div class="bg-gray-2 h-32"></div>
+      </div>
+      <div class="w-1/12 px-2">
+        <div class="bg-gray-2 h-32"></div>
+      </div>
+      <div class="w-1/12 px-2">
+        <div class="bg-gray-2 h-32"></div>
+      </div>
+      <div class="w-1/12 px-2">
+        <div class="bg-gray-2 h-32"></div>
+      </div>
+      <div class="w-1/12 px-2">
+        <div class="bg-gray-2 h-32"></div>
+      </div>
+      <div class="w-1/12 px-2">
+        <div class="bg-gray-2 h-32"></div>
+      </div>
+      <div class="w-1/12 px-2">
+        <div class="bg-gray-2 h-32"></div>
+      </div>
+      <div class="w-1/12 px-2">
+        <div class="bg-gray-2 h-32"></div>
+      </div>
+      <div class="w-1/12 px-2">
+        <div class="bg-gray-2 h-32"></div>
+      </div>
+      <div class="w-1/12 px-2">
+        <div class="bg-gray-2 h-32"></div>
+      </div>
+      <div class="w-1/12 px-2">
+        <div class="bg-gray-2 h-32"></div>
+      </div>
+    </div>
+
+    <div class="mb-12">
+      <p class="heading-1">Typography</p>
+      <p class="heading-1">Heading 1 Open Sans, Regular, 2 Rem</p>
+      <p class="heading-2">Heading 2 - Open Sans, Regular, 1.75 Rem</p>
+      <p class="heading-3">Heading 3 - Open Sans, Regular, 1.5 Rem</p>
+      <p class="heading-4">Heading 4 - Open Sans, Bold, 1.25 Rem</p>
+      <p class="heading-5">Heading 5 - Open sans, Regular, 1.25 Rem</p>
+      <p class="headling-6">Heading 6 - Open Sans, Bold, 1 Rem</p>
+      <p class="button-text-on-light">Body text - Open sans, Regular, 1 Rem</p>
+      <p class="callout-text">Callout text - Open sans, Light, 1.5 Rem</p>
+      <p class="button-text-disabled">Button text disabled</p>
+
+      <div class="bg-black">
+        <p class="button-text-on-dark">Button text on dark</p>
+      </div>
+    </div>
+  </div>
+  <div class="bg-primary h-16 flex mb-4">
+    <div class="ml-12 flex items-center flex-initial text-white text-lg">
+      <p class="heading-1">Buttons</p>
+    </div>
+  </div>
+  <div class="min-w-xl max-w-4xl mx-12">
+    <div class="mb-7">
+      <button class="mh-btn mh-btn--primary">Primary button</button>
+      <button class="mh-btn mh-btn--outline">Outline button</button>
+    </div>
+  </div>
+
+  <div class="bg-primary h-16 flex mb-4">
+    <div class="ml-12 flex items-center flex-initial text-white text-lg">
+      <p class="heading-1">Forms</p>
+    </div>
+  </div>
+  <div class="min-w-xl max-w-4xl mx-12 mb-7">
+    <div class="mb-12">
+      <form action="" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><input
+          type="hidden" name="authenticity_token" value="lqyLr9OreMOVUMYAFgP/6tByiihFBQpzRgBm3PFU1Rlvyc9fLtfRPjDpneRhGp403cwP4+fcr34ho1tyjC8xpw==">
+        <div class="bg-error-background text-error py-2 mb-4">
+          <ul>
+            <li>Email can't be blank</li>
+            <li>Password can't be blank</li>
+            <li>Role can't be blank</li>
+            <li>Food can't be blank</li>
+            <li>First name starts with z.</li>
+          </ul>
+        </div>
+
+        <div class="mb-7 w-1/4"><label class="mh-form-field__label" for="styleguide_controller_sample_user_first_name">First
+            name</label>
+          <div class="mh-input-wrapper"><input attached_error_icon="true" class="mh-form-field__input mh-error" type="text"
+              value="Ziggy" name="styleguide_controller_sample_user[first_name]" id="styleguide_controller_sample_user_first_name">
+            <div class="mh-error-icon mh-error-icon--inline">
+              <div class="icon-stack-wrapper">
+                <i class="fas fa-circle text-white"></i>
+                <i class="fas fa-exclamation-circle text-error"></i>
+              </div>
+            </div>
+          </div>
+          <div class="mh-form-field__error-message">starts with z.</div>
+        </div>
+        <div class="mb-7 w-1/4"><label class="mh-form-field__label" for="styleguide_controller_sample_user_last_name">Last
+            name</label>
+          <div class="mh-input-wrapper"><input attached_error_icon="true" class="mh-form-field__input" type="text"
+              value="Stardust" name="styleguide_controller_sample_user[last_name]" id="styleguide_controller_sample_user_last_name"></div>
+        </div>
+        <div class="mb-7 w-1/4"><label class="mh-form-field__label" for="styleguide_controller_sample_user_password">Password</label>
+          <div class="mh-input-wrapper"><input attached_error_icon="true" class="mh-form-field__input mh-error" type="text"
+              name="styleguide_controller_sample_user[password]" id="styleguide_controller_sample_user_password">
+            <div class="mh-error-icon mh-error-icon--inline">
+              <div class="icon-stack-wrapper">
+                <i class="fas fa-circle text-white"></i>
+                <i class="fas fa-exclamation-circle text-error"></i>
+              </div>
+            </div>
+          </div>
+          <div class="mh-form-field__error-message">can't be blank</div>
+        </div>
+
+        <div class="mb-7 w-1/4"><label class="mh-form-field__label" for="styleguide_controller_sample_user_description">Description</label>
+          <div class="mh-input-wrapper"><textarea class="mh-form-field__input" data-controller="textarea-autosize" name="styleguide_controller_sample_user[description]"
+              id="styleguide_controller_sample_user_description" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 40px;">Some long description here</textarea></div>
+        </div>
+        <div class="mb-7 w-1/2"><label class="mh-form-field__label" for="styleguide_controller_sample_user_email">Email</label>
+          <div class="flex">
+            <div class="mr-2 flex-auto">
+              <div class="mh-input-wrapper"><input attached_error_icon="true" class="mh-form-field__input mh-error"
+                  type="text" name="styleguide_controller_sample_user[email]" id="styleguide_controller_sample_user_email">
+                <div class="mh-error-icon mh-error-icon--inline">
+                  <div class="icon-stack-wrapper">
+                    <i class="fas fa-circle text-white"></i>
+                    <i class="fas fa-exclamation-circle text-error"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mh-form-field__error-message flex-auto">can't be blank</div>
+          </div>
+        </div>
+
+        <div class="mb-7">
+          <p class="form-label">Check all that apply</p>
+
+          <div class="flex w-1/2">
+            <div class="mh-input-wrapper w-1/2">
+              <label class="block form-text">
+                <input name="styleguide_controller_sample_user[pizza]" type="hidden" value="0"><input type="checkbox"
+                  value="1" name="styleguide_controller_sample_user[pizza]" id="styleguide_controller_sample_user_pizza"><span
+                  class="ml-2">Pizza</span>
+              </label>
+              <label class="block form-text">
+                <input name="styleguide_controller_sample_user[hotdog]" type="hidden" value="0"><input type="checkbox"
+                  value="1" name="styleguide_controller_sample_user[hotdog]" id="styleguide_controller_sample_user_hotdog"><span
+                  class="ml-2">Hot Dog</span>
+              </label>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="mb-7">
+          <div class="flex h-10 items-center">
+            <span class="form-label">Select a role</span>
+            <div class="mh-error-icon ml-2">
+              <div class="icon-stack-wrapper">
+                <i class="fas fa-circle text-white"></i>
+                <i class="fas fa-exclamation-circle text-error"></i>
+              </div>
+            </div>
+
+            <div class="mh-form-field__error-message ml-2">can't be blank</div>
+          </div>
+          <div class="flex w-1/2">
+            <div class="mh-input-wrapper w-1/2">
+              <label class="block form-text">
+                <input type="radio" value="admin" name="styleguide_controller_sample_user[role]" id="styleguide_controller_sample_user_role_admin"
+                  class="mh-error"><span class="ml-2">Admin</span>
+              </label>
+              <label class="block form-text">
+                <input type="radio" value="user" name="styleguide_controller_sample_user[role]" id="styleguide_controller_sample_user_role_user"
+                  class="mh-error"><span class="ml-2">User</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-7 w-1/2">
+          <label class="block form-label" for="styleguide_controller_sample_user_status">Status</label>
+          <div class="hey" data-controller="react-select" data-react-select-props="{&quot;name&quot;:&quot;styleguide_controller_sample_user_[status]&quot;,&quot;inputId&quot;:&quot;styleguide_controller_sample_user_status&quot;,&quot;foo&quot;:&quot;bar&quot;,&quot;isMulti&quot;:true,&quot;options&quot;:[{&quot;value&quot;:&quot;active&quot;,&quot;label&quot;:&quot;active&quot;},{&quot;value&quot;:&quot;inactive&quot;,&quot;label&quot;:&quot;inactive&quot;},{&quot;value&quot;:&quot;on leave&quot;,&quot;label&quot;:&quot;on leave&quot;},{&quot;value&quot;:&quot;retired&quot;,&quot;label&quot;:&quot;retired&quot;}]}">
+            <div class="css-10nd86i mh-select-container">
+              <div class="css-vj8t7z mh-select__control">
+                <div class="css-1hwfws3 mh-select__value-container mh-select__value-container--is-multi">
+                  <div class="css-1492t68 mh-select__placeholder">Select...</div>
+                  <div class="css-1g6gooi">
+                    <div class="mh-select__input" style="display: inline-block;"><input autocapitalize="none"
+                        autocomplete="off" autocorrect="off" id="styleguide_controller_sample_user_status" spellcheck="false"
+                        tabindex="0" type="text" aria-autocomplete="list" value="" style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                      <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 16px; font-family: sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="css-1wy0on6 mh-select__indicators"><span class="css-d8oujb mh-select__indicator-separator"></span>
+                  <div aria-hidden="true" class="css-1ep9fjw mh-select__indicator mh-select__dropdown-indicator"><svg
+                      height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="css-19bqh2r">
+                      <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                    </svg></div>
+                </div>
+              </div>
+              <div><input name="styleguide_controller_sample_user_[status]" type="hidden"></div>
+            </div>
+          </div>
+        </div>
+        <input type="submit" name="commit" value="Submit" class="mh-btn mh-btn--primary" data-disable-with="Submit">
+        <button disabled="" class="mh-btn">Disabled</button>
+      </form>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

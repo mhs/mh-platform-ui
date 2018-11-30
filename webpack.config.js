@@ -3,7 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: './src/styles/application.scss',
+  entry: './src/js/index.js',
   mode: process.env.NODE_ENV,
   module: {
     rules: [
@@ -30,6 +30,19 @@ module.exports = {
           ],
         }),
       },
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-react'],
+            plugins: [
+              '@babel/plugin-proposal-class-properties'
+            ]
+          }
+        }
+      }
     ],
   },
   plugins: [

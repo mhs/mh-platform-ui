@@ -1,3 +1,3 @@
 module.exports = {
-  plugins: [require('tailwindcss')('./src/styles/tailwind.js')],
+  plugins: [require('tailwindcss')('./src/styles/mh-platform-tailwind.js')],
 }

@@ -67,6 +67,6 @@ const context = require.context("./stimulus-controllers", true, /\.js$/)
 application.load(definitionsFromContext(context))
 
 // load the platform's controllers
-const context = require.context("mh-platform-ui/src/js/stimulus-controllers", true, /\.js$/)
+const context = require.context("mh-platform-ui/lib/js/stimulus-controllers", true, /\.js$/)
 application.load(definitionsFromContext(context))
 ```

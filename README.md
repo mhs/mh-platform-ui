@@ -45,6 +45,8 @@ and a bootstrap-style dropdown button.
 You can import and load the platform's controllers alonside the ones for your own application.
 Here's an example from a rails app.
 
+Note that we consume js components from the `lib` directory rather than directly from `src`.  It's problematic to set up webpack/babel to transpile files from `node_modules` so it's common convention to distribute a `lib` directory that has been transpiled by [babel](https://babeljs.io/).
+
 
 ```js
 import Rails from 'rails-ujs';
